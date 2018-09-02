@@ -821,6 +821,13 @@ button {
   width: 3rem;
   border-right: 1px solid #484848;
   height: 2.875rem;
+  position: relative;
+}
+
+.navigation_plane {
+  position: absolute;
+  -webkit-transform: translate(30%, 30%);
+  transform: translate(30%, 30%);
 }
 
 .button_rigth {

@@ -175,6 +175,13 @@
   width: calculateRem(48px);
   border-right: 1px solid $color-footer-copy;
   height: calculateRem(46px);
+  position: relative;
+}
+
+.navigation_plane{
+  position: absolute;
+  transform: translate(30%, 30%);
+
 }
 
 .button_rigth {
