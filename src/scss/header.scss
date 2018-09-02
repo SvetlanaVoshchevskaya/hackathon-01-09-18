@@ -8,20 +8,15 @@
   @return #{$remSize}rem;
 }
 
-// .wrapper {
-//   width: calculateRem(1600px);
-//   margin: auto;
-// }
 
 .header {
-  padding-top: calculateRem(30px);
-  padding-bottom: calculateRem(30px);
+  padding: calculateRem(20px) calculateRem(8px);
   background-color: #222222;
   font-family: $main-font;
 }
 
 .navigation {
-  width: calculateRem(1600px);
+  max-width: 83%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -30,23 +25,42 @@
   &__container--left {
     display: flex;
     justify-content: space-between;
-    width: calculateRem(800px);
+    min-width: 50%;
   }
 
   &__container--right {
     display: flex;
     justify-content: space-between;
-    width: calculateRem(260px);
+    align-items: flex-start;
+    min-width: 16%;
   }
 
   &__item {
-    text-decoration: none;
     color: #dddddd;
     font-size: calculateRem(12px);
     line-height: 1.5;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &--svg {
+      margin-right: 20px;
+    }
 
     &--border {
       position: relative;
+      padding-left: 30px;
+
+      &::before {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        content: '';
+        display: block;
+        left: calculateRem(0px);
+        background-image: url(../img/user.png);
+      }
 
       &::after {
         position: absolute;
@@ -55,7 +69,7 @@
         content: '';
         display: block;
         bottom: calculateRem(5px);
-        left: calculateRem(40px);
+        right: -35%;
         background-color: #ddd;
         cursor: auto;
       }
@@ -67,9 +81,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: calculateRem(494px);
+  min-width: 65%;
   list-style: none;
 
+  &__item {
+    padding-bottom: calculateRem(10px);
+  }
 
   &__item:hover {
     border-bottom: 1px solid #dddddd;
@@ -82,19 +99,10 @@
     font-size: calculateRem(12px);
  
     &--arrow {
-      position: relative;
-      padding-right: calculateRem(25px);
-
-      &::after {
-        position: absolute;
-        content: '';
-        border-style: solid;
-        border-width: calculateRem(6px) calculateRem(4px) calculateRem(0px)
-          calculateRem(4px);
-        border-color: #ddd transparent transparent transparent;
-        right: calculateRem(0px);
-        bottom: calculateRem(5px);
-      }
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
     }
   }
 }
@@ -104,12 +112,15 @@
 .filters-section {
   font-family: $main-font;
   font-size: 13px;
-  border-bottom: 1px solid #ddd;
-  margin-bottom: calculateRem(100px);
+  padding: 0 calculateRem(8px) calculateRem(20px);
+
+  &__container {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: calculateRem(50px);
+  }
 
   &__wrapper {
-    position: relative;
-    width: calculateRem(1600px);
+    max-width: 83%;
     margin: 0 auto;
   }
 
@@ -130,6 +141,13 @@
     &--search {
       width: 100%;
       display: inline;
+      color: #000;
+      text-transform: none;
+      cursor: text;
+
+      &::-webkit-input-placeholder {
+        text-transform: uppercase;
+      }
     }
   }
 
@@ -145,6 +163,7 @@
     position: absolute;
     background-color: transparent;
     border: 0;
+    outline: 0;
     cursor: pointer;
 
     &--search {
@@ -156,9 +175,7 @@
     }
 
     &--remove {
-      position: absolute;
-      left: 0;
-      bottom: calculateRem(-80px);
+      position: static;
       font-family: $main-font;
       font-size: calculateRem(12px);
       color: $fonts-color;
