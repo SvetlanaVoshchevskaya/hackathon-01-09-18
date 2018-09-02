@@ -2,28 +2,95 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="theme-color" content="#000000">
-  <meta name="copyright" content="Author">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
-  <meta name="apple-mobile-web-app-title" content="Application Name">
-  <meta name="msapplication-TileImage" content="images/favicons/144x144.png">
-  <meta name="msapplication-TileColor" content="#000000">
-  <meta name="format-detection" content="telephone=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="theme-color" content="#000000">
+    <meta name="copyright" content="Author">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+    <meta name="apple-mobile-web-app-title" content="Application Name">
+    <meta name="msapplication-TileImage" content="images/favicons/144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="format-detection" content="telephone=no">
 
-  <title>Placeholder title</title>
-  <link rel="stylesheet" href="css/styles.min.css">
+    <title>Placeholder title</title>
+    <link rel="stylesheet" href="css/styles.min.css">
 </head>
+
 <body>
-  
+    <header class="header">
+        <nav class="navigation">
+            <div class="navigation__container--left">
+
+                <a href="#" class="header__logo">
+                    <img src="img/logo.png" alt="logo" width="230">
+                </a>
+
+                <ul class="navigation-menu">
+                    <li class="navigation-menu__item">
+                        <a href="#" class="navigation-menu__link navigation-menu__link--arrow">Каталог</a>
+                    </li>
+                    <li class="navigation-menu__item">
+                        <a href="#" class="navigation-menu__link navigation-menu__link--arrow">Акции</a>
+                    </li>
+                    <li class="navigation-menu__item">
+                        <a href="#" class="navigation-menu__link">Отзывы</a>
+                    </li>
+                    <li class="navigation-menu__item">
+                        <a href="#" class="navigation-menu__link">О проекте</a>
+                    </li>
+                    <li class="navigation-menu__item">
+                        <a href="#" class="navigation-menu__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navigation__container--right">
+                <a href="#" class="navigation__item">
+                    <svg width="16px" height="16px">
+                        <use href="img/svg/symbol-defs.svg#user"></use>
+                    </svg>
+                </a>
+                <a href="#" class="navigation__item navigation__item--border">Вход</a>
+                <a href="#" class="navigation__item">Регистрация</a>
+                <a href="#" class="navigation__item">
+                    <svg width="16px" height="16px">
+                        <use href="img/svg/symbol-defs.svg#like-1"></use>
+                    </svg>
+                </a>
+                <a href="#" class="navigation__item">
+                    <svg width="16px" height="16px">
+                        <use href="img/svg/symbol-defs.svg#shopping-bag"></use>
+                    </svg>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <section class="filters-section">
+            <div class="filters-section__wrapper">
+                <select name="sort" class="filters-section__item filters-section__item--sort">
+                    <option value="1">Сортировка</option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                </select>
+                <select name="category" class="filters-section__item filters-section__item--category">
+                    <option value="1">Категории</option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                </select>
+                <div class="filters-section__search-wrapper">
+                    <input type="search" class="filters-section__item filters-section__item--search" placeholder="Поиск">
+                    <button class="filters-section__button filters-section__button--search"></button>
+                </div>
+                <button class="filters-section__button filters-section__button--remove">Снять фильтры</button>
+            </div>
+    </section>
 
 
-<!--   
+    <!--   
   <script src="js/scripts.min.js"></script> -->
 </body>
 
