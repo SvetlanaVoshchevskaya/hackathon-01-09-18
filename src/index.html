@@ -20,11 +20,392 @@
   <link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body>
-  
+  <div class="wrapper">
+  <header class="header">
+    <nav class="navigation">
+      <div class="navigation__container--left">
+        <a href="#" class="header__logo">
+          <img src="img/logo.png" alt="logo" width="230">
+        </a>
+        <ul class="navigation-menu">
+          <li class="navigation-menu__item">
+            <a href="#" class="navigation-menu__link navigation-menu__link--arrow">Каталог</a>
+          </li>
+          <li class="navigation-menu__item">
+            <a href="#" class="navigation-menu__link navigation-menu__link--arrow">Акции</a>
+          </li>
+          <li class="navigation-menu__item">
+            <a href="#" class="navigation-menu__link">Отзывы</a>
+          </li>
+          <li class="navigation-menu__item">
+            <a href="#" class="navigation-menu__link">О проекте</a>
+          </li>
+          <li class="navigation-menu__item">
+            <a href="#" class="navigation-menu__link">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navigation__container--right">
+        <a href="#" class="navigation__item">
+          <svg width="16px" height="16px">
+            <use href="img/svg/symbol-defs.svg#user"></use>
+          </svg>
+        </a>
+        <a href="#" class="navigation__item navigation__item--border">Вход</a>
+        <a href="#" class="navigation__item">Регистрация</a>
+        <a href="#" class="navigation__item">
+          <svg width="16px" height="16px">
+            <use href="img/svg/symbol-defs.svg#like-1"></use>
+          </svg>
+        </a>
+        <a href="#" class="navigation__item">
+          <svg width="16px" height="16px">
+            <use href="img/svg/symbol-defs.svg#shopping-bag"></use>
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <section class="filters-section">
+    <div class="filters-section__wrapper">
+      <select name="sort" class="filters-section__item filters-section__item--sort">
+        <option value="1">Сортировка</option>
+        <option value="2"></option>
+        <option value="3"></option>
+      </select>
+      <select name="category" class="filters-section__item filters-section__item--category">
+        <option value="1">Категории</option>
+        <option value="2"></option>
+        <option value="3"></option>
+      </select>
+      <div class="filters-section__search-wrapper">
+        <input type="search" class="filters-section__item filters-section__item--search" placeholder="Поиск">
+        <button class="filters-section__button filters-section__button--search"></button>
+      </div>
+      <button class="filters-section__button filters-section__button--remove">Снять фильтры</button>
+    </div>
+  </section>
+  <main class="main">
+    <li class="main__productlist"> <a href="#" class="main__link"><img src="img/photo 1-2.png" class="main__img" alt="" width="381"
+          height="523">
+        <div class="main__promoinf">Акция!</div>
+        <div class="hover_item">
+          <svg class=" hover_item__glass_icon" width="27" height="18">
+            <use href="img/svg/symbol-defs.svg#add-searching"></use>
+          </svg> <a href="#" class="hover_item__link">Узнать больше</a><svg class=" hover_item__heart_icon" width="27" height="18">
+            <use href="img/svg/symbol-defs.svg#heart-1"></use>
+          </svg>
+        </div>
+      </a>
+      <div class="collection">
+        <p class="collection__info">КОЛЛЕКЦИЯ 2018</p>
+        <div class="collectin__type">
+          <span class="collection__name">Купальник </span> <span class="collection__form">Полоска</span></div>
+        <div class="collection__price">
+          <span class="collection__oldprice">850.00</span>
+          <span class="collection__newprice">450.00</span>
+        </div>
+      </div>
+    </li>
+    <li class="main__productlist"><a href="#" class="main__link"><img src="img/photo 2-2.png" class="main__img" alt="" width="381"
+          height="523">
+        <div class="main__promoinf">Акция!</div>
+        <div class="hover_item">
+          <svg class=" hover_item__glass_icon" width="27" height="18">
+            <use href="img/svg/symbol-defs.svg#add-searching"></use>
+          </svg> <a href="#" class="hover_item__link">Узнать больше</a><svg class=" hover_item__heart_icon" width="27" height="18">
+            <use href="img/svg/symbol-defs.svg#heart-1"></use>
+          </svg>
+        </div></a>
+      <div class="collection">
+        <p class="collection__info">КОЛЛЕКЦИЯ 2018</p>
+        <div class="collectin__type">
+          <span class="collection__name">Купальник </span> <span class="collection__form">Полоска</span> </div>
+        <div class="collection__price">
+          <span class="collection__oldprice">850.00</span>
+          <span class="collection__newprice">450.00</span>
+        </div>
+      </div>
+    </li>
+    <li class="main__productlist"><a href="#" class="main__link"><img src="img/photo 1.png" class="main__img" alt="" width="381"
+          height="523">
+        <div class="main__promoinf">Акция!</div>
+        <div class="hover_item">
+          <svg class=" hover_item__glass_icon" width="27" height="18">
+            <use href="img/svg/symbol-defs.svg#add-searching"></use>
+          </svg> <a href="#" class="hover_item__link">Узнать больше</a><svg class=" hover_item__heart_icon" width="27" height="18">
+            <use href="img/svg/symbol-defs.svg#heart-1"></use>
+          </svg>
+        </div></a>
+      <div class="collection">
+        <p class="collection__info">КОЛЛЕКЦИЯ 2018</p>
+        <div class="collectin__type">
+          <span class="collection__name">Купальник </span> <span class="collection__form">Единорог</span></div>
+        <div class="collection__price">
+          <span class="collection__oldprice">850.00</span>
+          <span class="collection__newprice">450.00</span>
+        </div>
+      </div>
+    </li>
+    <li class="main__productlist"><a href="#" class="main__link"><img src="img/photo 2.png" class="main__img" alt="" width="381"
+          height="523">
+        <div class="main__promoinf">Акция!</div>
+        <div class="hover_item">
+          <svg class=" hover_item__glass_icon" width="27" height="18">
+            <use href="img/svg/symbol-defs.svg#add-searching"></use>
+          </svg> <a href="#" class="hover_item__link">Узнать больше</a><svg class=" hover_item__heart_icon" width="27" height="18">
+            <use href="img/svg/symbol-defs.svg#heart-1"></use>
+          </svg>
+        </div></a>
+      <div class="collection">
+        <p class="collection__info">КОЛЛЕКЦИЯ 2018</p>
+        <div class="collectin__type">
+          <span class="collection__name">Купальник </span> <span class="collection__form">Фламинго</span> </div>
+        <div class="collection__price">
+          <span class="collection__oldprice">850.00</span>
+          <span class="collection__newprice">450.00</span>
+        </div>
+      </div>
+    </li>
+    <li class="main__productlist"><a href="#" class="main__link"><img src="img/photo 1-1.png" class="main__img" alt="" width="381"
+          height="523">
+        <div class="main__promoinf">Акция!</div>
+        <div class="hover_item">
+          <svg class=" hover_item__glass_icon" width="27" height="18">
+            <use href="img/svg/symbol-defs.svg#add-searching"></use>
+          </svg> <a href="#" class="hover_item__link">Узнать больше</a><svg class=" hover_item__heart_icon" width="27" height="18">
+            <use href="img/svg/symbol-defs.svg#heart-1"></use>
+          </svg>
+        </div></a>
+      <div class="collection">
+        <p class="collection__info">КОЛЛЕКЦИЯ 2018</p>
+        <div class="collectin__type">
+          <span class="collection__name">Купальник </span> <span class="collection__form">Полоска</span></div>
+        <div class="collection__price">
+          <span class="collection__oldprice">850.00</span>
+          <span class="collection__newprice">450.00</span>
+        </div>
+      </div>
+    </li>
+    <li class="main__productlist"><a href="#" class="main__link"><img src="img/photo 2-1.png" class="main__img" alt="" width="381"
+          height="523">
+        <div class="main__promoinf">Акция!</div>
+        <div class="hover_item">
+          <svg class=" hover_item__glass_icon" width="27" height="18">
+            <use href="img/svg/symbol-defs.svg#add-searching"></use>
+          </svg> <a href="#" class="hover_item__link">Узнать больше</a><svg class=" hover_item__heart_icon" width="27" height="18">
+            <use href="img/svg/symbol-defs.svg#heart-1"></use>
+          </svg>
+        </div></a>
+      <div class="collection">
+        <p class="collection__info">КОЛЛЕКЦИЯ 2018</p>
+        <div class="collectin__type">
+          <span class="collection__name">Купальник </span> <span class="collection__form">Полоска</span></div>
+        <div class="collection__price">
+          <span class="collection__oldprice">850.00</span>
+          <span class="collection__newprice">450.00</span>
+        </div>
+      </div>
+    </li>
+    <li class="main__productlist"><a href="#" class="main__link"><img src="img/photo 3-1.png" class="main__img" alt="" width="381"
+          height="523">
+        <div class="main__promoinf">Акция!</div>
+        <div class="hover_item">
+          <svg class=" hover_item__glass_icon" width="27" height="18">
+            <use href="img/svg/symbol-defs.svg#add-searching"></use>
+          </svg> <a href="#" class="hover_item__link">Узнать больше</a><svg class=" hover_item__heart_icon" width="27" height="18">
+            <use href="img/svg/symbol-defs.svg#heart-1"></use>
+          </svg>
+        </div>
+      </a>
+      <div class="collection">
+        <p class="collection__info">КОЛЛЕКЦИЯ 2018</p>
+        <div class="collectin__type">
+          <span class="collection__name">Купальник </span> <span class="collection__form">Единорог</span></div>
+        <div class="collection__price">
+          <span class="collection__oldprice">850.00</span>
+          <span class="collection__newprice">450.00</span>
+        </div>
+      </div>
+    </li>
+    <li class="main__productlist"><a href="#" class="main__link"><img src="img/photo 4-1.png" class="main__img" alt="" width="381"
+          height="523"> <div class="main__promoinf">Акция!</div>
+        <div class="hover_item">
+          <svg class=" hover_item__glass_icon" width="27" height="18">
+            <use href="img/svg/symbol-defs.svg#add-searching"></use>
+          </svg> <a href="#" class="hover_item__link">Узнать больше</a><svg class=" hover_item__heart_icon" width="27" height="18">
+            <use href="img/svg/symbol-defs.svg#heart-1"></use>
+          </svg>
+        </div>
+      </a>
+      <div class="collection">
+        <p class="collection__info">КОЛЛЕКЦИЯ 2018</p>
+        <div class="collectin__type">
+          <span class="collection__name">Купальник </span> <span class="collection__form">Фламинго</span></div>
+        <div class="collection__price">
+          <span class="collection__oldprice">850.00</span>
+          <span class="collection__newprice">450.00</span>
+        </div>
+      </div>
+    </li>
+    <li class="main__productlist"><a href="#" class="main__link"><img src="img/photo 3-2.png" class="main__img" alt="" width="381"
+          height="523">
+        <div class="main__promoinf">Акция!</div>
+        <div class="hover_item">
+          <svg class=" hover_item__glass_icon" width="27" height="18">
+            <use href="img/svg/symbol-defs.svg#add-searching"></use>
+          </svg> <a href="#" class="hover_item__link">Узнать больше</a><svg class=" hover_item__heart_icon" width="27" height="18">
+            <use href="img/svg/symbol-defs.svg#heart-1"></use>
+          </svg>
+        </div></a>
+      <div class="collection">
+        <p>КОЛЛЕКЦИЯ 2018</p>
+        <div class="collectin__type">
+          <span class="collection__name">Купальник </span> <span class="collection__form">Полоска</span></div>
+        <div class="collection__price">
+          <span class="collection__oldprice">850.00</span>
+          <span class="collection__newprice">450.00</span>
+        </div>
+      </div>
+    </li>
+    <li class="main__productlist"><a href="#" class="main__link"><img src="img/photo 2.png" class="main__img" alt="" width="381"
+          height="523">
+        <div class="main__promoinf">Акция!</div>
+        <div class="hover_item">
+          <svg class=" hover_item__glass_icon" width="27" height="18">
+            <use href="img/svg/symbol-defs.svg#add-searching"></use>
+          </svg> <a href="#" class="hover_item__link">Узнать больше</a><svg class=" hover_item__heart_icon" width="27" height="18">
+            <use href="img/svg/symbol-defs.svg#heart-1"></use>
+          </svg>
+        </div>
+      </a><div class="collection">
+        <p class="collection__info">КОЛЛЕКЦИЯ 2018</p>
+        <div class="collectin__type">
+          <span class="collection__name">Купальник </span> <span class="collection__form">Полоска</span></div>
+        <div class="collection__price">
+          <span class="collection__oldprice">850.00</span>
+          <span class="collection__newprice">450.00</span>
+        </div>
+      </div>
+    </li>
+    <li class="main__productlist">
+      <a href="#" class="main__link"><img src="img/photo 3.png " class="main__img" alt="" width="381" height="523">
+        <div class="main__promoinf">Акция!</div>
+        <div class="hover_item">
+          <svg class=" hover_item__glass_icon" width="27" height="18">
+            <use href="img/svg/symbol-defs.svg#add-searching"></use>
+          </svg> <a href="#" class="hover_item__link">Узнать больше</a><svg class=" hover_item__heart_icon" width="27" height="18">
+            <use href="img/svg/symbol-defs.svg#heart-1"></use>
+          </svg>
+        </div>
+      </a>
+      <div class="collection">
+        <p class="collection__info">КОЛЛЕКЦИЯ 2018</p>
+        <div class="collectin__type">
+          <span class="collection__name">Купальник </span> <span class="collection__form">Единорог</span></div>
+        <div class="collection__price">
+          <span class="collection__oldprice">850.00</span>
+          <span class="collection__newprice">450.00</span>
+        </div>
+      </div>
+    </li>
+    <li class="main__productlist">
+      <a href="#" class="main__link">
 
+        <img src="img/photo 4-1.png" class="main__img" alt="" width="381" height="523">
+        <div class="main__promoinf">Акция!</div>
+        <div class="hover_item">
+          <svg class=" hover_item__glass_icon" width="27" height="18">
+            <use href="img/svg/symbol-defs.svg#add-searching"></use>
+          </svg> <a href="#" class="hover_item__link">Узнать больше</a><svg class=" hover_item__heart_icon" width="27" height="18">
+            <use href="img/svg/symbol-defs.svg#heart-1"></use>
+          </svg>
+        </div>
+      </a>
+      <div class="collection">
+        <p class="collection__info">КОЛЛЕКЦИЯ 2018</p>
+        <div class="collectin__type">
+          <span class="collection__name">Купальник </span> <span class="collection__form">Фламинго</span></div>
+        <div class="collection__price">
+          <span class="collection__oldprice">850.00</span>
+          <span class="collection__newprice">450.00</span>
+        </div>
+      </div>
+    </li>
+  </main>
+  <footer class="footer">
+    
+    <div class="footer__wrap_first_part">
+      <div class="footer__first_column">
+        <h2 class="header_first_column">SK WEAR ONLINE</h2>
+        <p class="text_footer_first_column">Производство купальников и одежды для фитнеса
+        </p>
+        <p class="contacts_footer_first_column">ИП Хлебникова Ирина Александровна</p>
+        <p class="contacts_footer_first_column"> г. Сочи</p>
+        <p class="contacts_footer_first_column"> E: sushka_kuper@mail.ru</p>
+        <p class="contacts_footer_first_column"> Т: 8988-167-15-09</p>
+      </div>
+      <!--first column-->
+      <div class="footer__second_column">
+        <h3 class="header_footer_second_column">о нас</h3>
+        <ul class="list_text_footer_second_column">
+          <li class="li clearfix"><a class="link_text_item_footer_second_column clearfix" href="#">Каталог</a></li>
+          <li class="li clearfix"><a class="link_text_item_footer_second_column" href="#">Акции</a></li>
+          <li class="li clearfix"><a class="link_text_item_footer_second_column" href="#">Отзывы</a></li>
+          <li class="li clearfix"><a class="link_text_item_footer_second_column" href="#">О проекте</a></li>
+          <li class="li clearfix"><a class="link_text_item_footer_second_column" href="#">Контакты</a></li>
 
-<!--   
-  <script src="js/scripts.min.js"></script> -->
+        </ul>
+      </div>
+      <!--second column-->
+      <div class="footer__third_column">
+        <h3 class="header_footer_third_column">частые вопросы</h3>
+        <ul class="list_text_footer_third_column">
+          <li class="li clearfix"><a class="link_text_item_footer_third_column" href="#"> Оплата и доставка
+            </a></li>
+          <li class="li clearfix"><a class="link_text_item_footer_third_column" href="#"> Гарантия</a></li>
+          <li class="li clearfix"><a class="link_text_item_footer_third_column" href="#"> Качество</a></li>
+          <li class="li clearfix"><a class="link_text_item_footer_third_column" href="#"> Условия возврата</a></li>
+        </ul>
+      </div>
+      <!--third column-->
+      <div class="footer_fourth_column">
+        <h3 class="header_footer_fourth_column">присоединяйтесь</h3>
+        <div class="wrap_footer_img">
+          <a class="contact_buttons__insta" href="https://www.instagram.com/?hl=uk" target="_blank">
+            <svg class="contact__icon" width="28px" height="28px">
+              <use href="img/svg/symbol-defs.svg#instagram-logo-1"></use>
+            </svg>
+          </a>
+          <a class="contact_buttons__facebook" href="https://www.instagram.com/?hl=uk" target="_blank">
+            <svg class="contact__icon" width="28px" height="28px">
+              <use href="img/svg/symbol-defs.svg#facebook-app-logo"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer_fifth_column">
+        <h3 class="header_footer_fifth_column">рассылка новостей</h3>
+        <p class="text_footer_fifth_column">Будьте в курсе о наших акциях, скидках и других новостях</p>
+        <div class="wrap_button_fifth_column">
+          <a class="link_button_subscribe" href="#">
+            <div class="button_left">
+              <svg class="contact__icon contact__icon--nav" width="28px" height="28px">
+                <use href="img/svg/symbol-defs.svg#navigation"></use>
+              </svg>
+            </div>
+            <div class="button_rigth">
+              <p class="button_rigth_text">Подписаться</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__wrap_second_part">
+      <p class="footer__second_part_text"><span class="footer_copy">&copy;</span> 2018 Все права защищены skwear.com</p>
+    </div>
+  </footer>
+</div>
 </body>
 
 </html>
