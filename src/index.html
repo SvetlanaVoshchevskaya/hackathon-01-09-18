@@ -25,25 +25,22 @@
     <nav class="navigation">
       <div class="navigation__container--left">
         <a href="#" class="header__logo">
-          <img src="img/logo.png"  alt="logo" width="230">
+          <img src="img/logo.png" alt="logo" width="230">
         </a>
         <ul class="navigation-menu">
           <li class="navigation-menu__item">
-            <select name="category" class="navigation-menu__link navigation-menu__link--arrow">
-              <!-- <p>Каталог</p> -->
-              <!-- <option value="1">Каталог</option> -->
-              <option value="2">Осень</option>
-              <option value="3">Весна</option>
-            </select>
-            <!-- <a href="#" class="navigation-menu__link navigation-menu__link--arrow">Каталог</a> -->
+              <select name="category" class="navigation-menu__link navigation-menu__link--arrow">
+                  <option class="navigation-menu__option--name" value="">Каталог</option>
+                  <option class="navigation-menu__option" value="2">Осень</option>
+                  <option class="navigation-menu__option" value="3">Весна</option>
+                </select>
           </li>
           <li class="navigation-menu__item">
-            <!-- <a href="#" class="navigation-menu__link navigation-menu__link--arrow">Акции</a> -->
             <select name="category" class="navigation-menu__link navigation-menu__link--arrow">
-              <option value="1">Акции</option>
-              <option value="2">Бонусы</option>
-              <option value="3">Скидки</option>
-            </select>
+                <option class="navigation-menu__option--name" value="">Акции</option>
+                <option class="navigation-menu__option" value="2">Бонусы</option>
+                <option class="navigation-menu__option" value="3">Скидки</option>
+              </select>
           </li>
           <li class="navigation-menu__item">
             <a href="#" class="navigation-menu__link">Отзывы</a>
@@ -80,27 +77,27 @@
   </header>
   <form class="filters-section">
     <div class="filters-section__container">
-      <div class="filters-section__wrapper">
-        <select name="sort" class="filters-section__item filters-section__item--sort">
-          <option value="1">Сортировка</option>
-          <option value="2"></option>
-          <option value="3"></option>
-        </select>
-        <select name="category" class="filters-section__item filters-section__item--category">
-          <option value="1">Категории</option>
-          <option value="2"></option>
-          <option value="3"></option>
-        </select>
-        <div class="filters-section__search-wrapper">
-          <input type="search" class="filters-section__item filters-section__item--search" placeholder="Поиск">
-          <button type="submit" class="filters-section__button filters-section__button--search"></button>
-        </div>
+    <div class="filters-section__wrapper">
+      <select name="sort" class="filters-section__item filters-section__item--sort">
+        <option value="1">Сортировка</option>
+        <option value="2"></option>
+        <option value="3"></option>
+      </select>
+      <select name="category" class="filters-section__item filters-section__item--category">
+        <option value="1">Категории</option>
+        <option value="2"></option>
+        <option value="3"></option>
+      </select>
+      <div class="filters-section__search-wrapper">
+        <input type="search" class="filters-section__item filters-section__item--search" placeholder="Поиск">
+        <button type="submit" class="filters-section__button filters-section__button--search"></button>
       </div>
     </div>
-    <div class="filters-section__wrapper">
-      <button class="filters-section__button filters-section__button--remove">Снять фильтры</button>
-    </div>
-  </form>
+  </div>
+  <div class="filters-section__wrapper">
+    <button class="filters-section__button filters-section__button--remove">Снять фильтры</button>
+  </div>
+</form>
   <main class="main">
     <ul class="productlist">
       <li class="productlist__list">

@@ -1,8 +1,4 @@
-// * {
-//   outline: 1px solid red;
-//   margin: 0;
-//   padding: 0;
-// }
+
 @function calculateRem($size) {
   $remSize: $size / 16px;
   @return #{$remSize}rem;
@@ -51,6 +47,7 @@
     &--border {
       position: relative;
       padding-left: 30px;
+      padding-right: calculateRem(15px);
 
       &::before {
         position: absolute;
@@ -69,7 +66,7 @@
         content: '';
         display: block;
         bottom: calculateRem(5px);
-        right: -35%;
+        right: calculateRem(0px);
         background-color: #ddd;
         cursor: auto;
       }
@@ -103,6 +100,17 @@
       border: none;
       outline: none;
       cursor: pointer;
+    }
+  }
+
+  &__option {
+    background-color: #222222;
+    color: #ddd;
+    font-family: $main-font;
+    font-size: calculateRem(8px);
+
+    &--name {
+      display: none;
     }
   }
 }
@@ -186,3 +194,4 @@
     }
   }
 }
+

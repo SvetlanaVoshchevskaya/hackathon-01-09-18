@@ -642,6 +642,7 @@ button {
 .navigation__item--border {
   position: relative;
   padding-left: 30px;
+  padding-right: 0.9375rem;
 }
 
 .navigation__item--border::before {
@@ -661,7 +662,7 @@ button {
   content: '';
   display: block;
   bottom: 0.3125rem;
-  right: -35%;
+  right: 0rem;
   background-color: #ddd;
   cursor: auto;
 }
@@ -694,6 +695,17 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+.navigation-menu__option {
+  background-color: #222222;
+  color: #ddd;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.5rem;
+}
+
+.navigation-menu__option--name {
+  display: none;
 }
 
 .filters-section {
