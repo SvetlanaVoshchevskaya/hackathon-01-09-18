@@ -798,6 +798,7 @@ button {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .footer .footer__first_column {
@@ -1001,8 +1002,8 @@ button {
   border-right: 1px solid #484848;
   height: 2.875rem;
   width: 2.875rem;
-  -webkit-transform: translate(10%, 17%);
-  transform: translate(10%, 17%);
+  -webkit-transform: translate(17%, 17%);
+  transform: translate(17%, 17%);
   background-color: #000000;
 }
 

@@ -14,6 +14,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    flex-wrap: wrap
   }
 
   .footer__first_column {
@@ -219,7 +220,7 @@
   border-right: 1px solid $color-footer-copy;
   height: calculateRem(46px);
   width: calculateRem(46px);
-  transform: translate(10%, 17%);
+  transform: translate(17%, 17%);
   background-color: $mian-fonts-color;
 }
 
