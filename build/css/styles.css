@@ -517,11 +517,46 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #484848;
+  text-align: center;
+}
+
+.productlist__name {
+  border-right: 1px solid #737373;
+}
+
+.productlist__info {
+  margin-top: -2px;
+  padding-top: 10px;
+}
+
+.productlist__price {
+  padding-top: 10px;
+}
+
+.productlist__form {
+  padding-left: 5px;
+}
+
+.productlist__oldprice {
+  text-decoration: line-through;
+}
+
+.productlist__newprice {
+  color: #ea5d5b;
+}
+
+.productlist__type {
+  padding-top: 10px;
 }
 
 .productlist__list {
   list-style: none;
   position: relative;
+  margin-bottom: 48px;
 }
 
 .productlist__list:hover .hover_item {
@@ -539,40 +574,9 @@ button {
   color: #ea5d5b;
   font-size: 0.75rem;
   font-weight: 500;
-}
-
-.collection {
-  font-family: "Roboto", sans-serif;
-  font-size: 0.875rem;
-  font-weight: 400;
-  color: #484848;
-  text-align: center;
-  min-height: 6.25rem;
-  max-width: 23.8125rem;
-}
-
-.collection__name {
-  border-right: 1px solid #737373;
-}
-
-.collection__info {
-  margin-bottom: 10px;
-}
-
-.collection__price {
-  margin-top: 10px;
-}
-
-.collection__form {
-  padding-left: 5px;
-}
-
-.collection__oldprice {
-  text-decoration: line-through;
-}
-
-.collection__newprice {
-  color: #ea5d5b;
+  border-color: transparent;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .hover_item {
@@ -580,11 +584,12 @@ button {
   justify-content: space-around;
   align-items: center;
   background-color: #efefef;
-  min-height: 3.25rem;
-  width: 23.8125rem;
+  width: 23.625rem;
   position: absolute;
-  top: 75%;
+  top: 77%;
   opacity: 0;
+  padding-top: 18px;
+  padding-bottom: 19px;
 }
 
 .hover_item__link {
@@ -801,20 +806,13 @@ button {
   flex-wrap: wrap;
 }
 
-.footer .footer__first_column {
-  margin-right: 5.1875rem;
-}
-
 .footer .footer__title_first_column {
   font-family: "Cormorant Unicase", serif;
   font-size: 1.5625rem;
   color: #333333;
   font-weight: 300;
   letter-spacing: 0.0625rem;
-}
-
-.footer .footer__second_column {
-  margin-right: 6.0625rem;
+  margin-top: 0.75rem;
 }
 
 .footer .footer__list_text_second_column {
@@ -828,22 +826,18 @@ button {
 
 .footer .footer__first_column {
   min-width: 16.5%;
-  margin-right: px/16pxrem;
 }
 
 .footer .footer__second_column {
   min-width: 6%;
-  margin-right: 7.5rem;
 }
 
 .footer .footer__third_column {
   min-width: 11.61%;
-  margin-right: 8rem;
 }
 
 .footer .footer_fourth_column {
   min-width: 13.73%;
-  margin-right: 6.0625rem;
 }
 
 .footer .footer_fifth_column {
@@ -897,13 +891,7 @@ button {
   font-size: 0.75rem;
   color: #686868;
   letter-spacing: 0.0625rem;
-}
-
-.footer .footer__title_fifth_column,
-.footer .footer__title_fourth_column,
-.footer .footer__title_third_column,
-.footer .footer__title_second_column {
-  padding-top: 6px;
+  width: 14.375rem;
 }
 
 .footer .footer__second_part_text {
@@ -918,10 +906,7 @@ button {
 .footer .footer__link_mail,
 .footer .footer__link_tel {
   text-decoration: none;
-}
-
-.footer .footer__text_first_column:not(:last-child) {
-  margin-bottom: 0.3125rem;
+  display: block;
 }
 
 .footer .footer__wrap_img {
@@ -930,8 +915,8 @@ button {
   justify-content: space-between;
 }
 
-.text_first_column {
-  padding-bottom: 1.125rem;
+.text_first_column,
+.footer__link_mail {
   line-height: 1.25rem;
 }
 
@@ -942,6 +927,7 @@ button {
 .list_text_second_column,
 .list_text_third_column {
   list-style: none;
+  padding: 0;
 }
 
 .li__link_text_item_footer_second_column,
@@ -985,11 +971,15 @@ button {
 .button_rigth .button_rigth_text {
   color: #ffffff;
   text-align: center;
-  line-height: 2.875rem;
+  line-height: 1.3125rem;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 0.75rem;
   letter-spacing: 0.0625rem;
+}
+
+.wrap_button_fifth_column {
+  width: 212px;
 }
 
 .contact__facebook,
@@ -1002,9 +992,15 @@ button {
   border-right: 1px solid #484848;
   height: 2.875rem;
   width: 2.875rem;
-  -webkit-transform: translate(17%, 17%);
-  transform: translate(17%, 17%);
   background-color: #000000;
+}
+
+.flex_button {
+  display: flex;
+}
+
+.flex-child_button {
+  flex: 1 1 auto;
 }
 
 .contact__icon {

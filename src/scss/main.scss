@@ -20,11 +20,45 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  font-family: $main-font;
+  font-size: calculateRem(14px);
+  font-weight: $regular;
+  color: $color-footer-copy;
+  text-align: center;
+
+  &__name {
+    border-right: 1px solid $color-footer_text;
+  }
+
+  &__info {
+    margin-top: -2px;
+    padding-top: 10px;
+  }
+
+  &__price {
+    padding-top: 10px;
+  }
+
+  &__form {
+    padding-left: 5px;
+  }
+
+  &__oldprice {
+    text-decoration: line-through;
+  }
+
+  &__newprice {
+    color: $font-red;
+  }
+
+  &__type {
+    padding-top: 10px;
+  }
 
   &__list {
     list-style: none;
     position: relative;
- 
+    margin-bottom: 48px;
 
     &:hover .hover_item {
       opacity: 1;
@@ -42,53 +76,25 @@
     color: $font-red;
     font-size: calculateRem(12px);
     font-weight: $medium;
+    border-color: transparent;
+    cursor: pointer;
+    text-decoration: underline;
   }
 }
 
-.collection {
-  font-family: $main-font;
-  font-size: calculateRem(14px);
-  font-weight: $regular;
-  color: $color-footer-copy;
-  text-align: center;
-  min-height: calculateRem(100px);
-  max-width: calculateRem(381px);
-
-  &__name {
-    border-right: 1px solid $color-footer_text;
-  }
-
-  &__info {
-    margin-bottom: 10px;
-  }
-
-  &__price {
-    margin-top: 10px;
-  }
-
-  &__form {
-    padding-left: 5px;
-  }
-
-  &__oldprice {
-    text-decoration: line-through;
-  }
-
-  &__newprice {
-    color: $font-red;
-  }
-}
 
 .hover_item {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: $main-color-footer;
-  min-height: calculateRem(52px);
-  width: calculateRem(381px);
+  // min-height: calculateRem(52px);
+  width: calculateRem(378px);
   position: absolute;
-  top: 75%;
+  top: 77%;
   opacity: 0;
+  padding-top: 18px;
+  padding-bottom: 19px;
 
   &__link {
     color: $color-footer_text;
