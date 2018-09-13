@@ -9,6 +9,10 @@
   padding: calculateRem(20px) calculateRem(8px);
   background-color: #222222;
   font-family: $main-font;
+
+  &__logo {
+    line-height: 0;
+  }
 }
 
 .navigation {
@@ -28,7 +32,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    min-width: 16%;
+    flex-basis: 16%;
   }
 
   &__item {
@@ -44,35 +48,19 @@
       margin-right: 20px;
     }
 
+    &--icon {
+      display: flex;
+      align-items: center;
+    }
+
     &--border {
-      position: relative;
-      padding-left: 30px;
-      padding-right: calculateRem(15px);
-
-      &::before {
-        position: absolute;
-        width: 16px;
-        height: 16px;
-        content: '';
-        display: block;
-        left: calculateRem(0px);
-        background-image: url(../img/user.png);
-      }
-
-      &::after {
-        position: absolute;
-        width: 1px;
-        height: 10px;
-        content: '';
-        display: block;
-        bottom: calculateRem(5px);
-        right: calculateRem(0px);
-        background-color: #ddd;
-        cursor: auto;
+      width: 1px;
+      height: 12px;
+      background-color: #dddddd;
       }
     }
   }
-}
+
 
 .navigation-menu {
   display: flex;
@@ -82,11 +70,21 @@
   list-style: none;
 
   &__item {
-    padding-bottom: calculateRem(10px);
+    position: relative;
   }
 
-  &__item:hover {
-    border-bottom: 1px solid #dddddd;
+  &__item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: calculateRem(1px);
+    bottom: calculateRem(-8px);
+    background-color: #dddddd;
+    display: none;
+  }
+
+  &__item:hover::after {
+    display: block;
   }
 
   &__link {
