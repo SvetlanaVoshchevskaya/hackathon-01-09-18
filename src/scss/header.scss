@@ -25,7 +25,7 @@
   &__container--left {
     display: flex;
     justify-content: space-between;
-    min-width: 50%;
+    min-width: calculateRem(800px);
   }
 
   &__container--right {

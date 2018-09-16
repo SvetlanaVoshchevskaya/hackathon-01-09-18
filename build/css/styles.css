@@ -624,7 +624,7 @@ button {
 .navigation__container--left {
   display: flex;
   justify-content: space-between;
-  min-width: 50%;
+  min-width: 50rem;
 }
 
 .navigation__container--right {
