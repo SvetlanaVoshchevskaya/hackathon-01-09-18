@@ -772,7 +772,7 @@ button {
 .filters-section__button--search {
   width: 20px;
   height: 20px;
-  background-image: url(../img/search.png);
+  background-image: url(../img/svg/magnifying-glass.svg);
   right: 0.375rem;
   bottom: 0.9375rem;
 }
