@@ -597,6 +597,10 @@ button {
   text-decoration: none;
 }
 
+.hover_item__link:hover {
+  text-decoration: underline;
+}
+
 .hover_item__button {
   border-color: transparent;
   background-color: #efefef;

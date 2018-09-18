@@ -82,7 +82,6 @@
   }
 }
 
-
 .hover_item {
   display: flex;
   justify-content: space-around;
@@ -99,6 +98,10 @@
   &__link {
     color: $color-footer_text;
     text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__button {
