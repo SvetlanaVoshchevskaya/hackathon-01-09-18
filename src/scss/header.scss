@@ -1,9 +1,7 @@
-
 @function calculateRem($size) {
   $remSize: $size / 16px;
   @return #{$remSize}rem;
 }
-
 
 .header {
   padding: calculateRem(20px) calculateRem(8px);
@@ -57,10 +55,9 @@
       width: 1px;
       height: 12px;
       background-color: #dddddd;
-      }
     }
   }
-
+}
 
 .navigation-menu {
   display: flex;
@@ -74,7 +71,7 @@
   }
 
   &__item::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: calculateRem(1px);
@@ -92,7 +89,7 @@
     text-decoration: none;
     color: #dddddd;
     font-size: calculateRem(12px);
- 
+
     &--arrow {
       background-color: transparent;
       border: none;
@@ -175,21 +172,29 @@
     &--search {
       width: 20px;
       height: 20px;
-      background-image: url(../img/svg/magnifying-glass.svg);
       right: calculateRem(6px);
       bottom: calculateRem(15px);
     }
 
     &--remove {
-      position: static;
+      position: relative;
       font-family: $main-font;
       font-size: calculateRem(12px);
       color: $fonts-color;
 
-      &:hover {
-        border-bottom: 1px solid #000;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: calculateRem(1px);
+        bottom: calculateRem(-4px);
+        background-color: $font-color-footer-logo;
+        display: none;
+      }
+
+      &:hover::after {
+        display: block;
       }
     }
   }
 }
-
