@@ -801,6 +801,7 @@ button {
 .footer {
   background-color: #efefef;
   width: 100%;
+  margin: auto;
 }
 
 .footer .footer__wrap_first_part {
@@ -810,7 +811,6 @@ button {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  flex-wrap: wrap;
 }
 
 .footer .footer__title_first_column {
@@ -819,7 +819,6 @@ button {
   color: #333333;
   font-weight: 300;
   letter-spacing: 0.0625rem;
-  margin-top: 0.75rem;
 }
 
 .footer .footer__list_text_second_column {
@@ -832,31 +831,23 @@ button {
 }
 
 .footer .footer__first_column {
-  min-width: 16.5%;
+  padding-right: 10px;
 }
 
 .footer .footer__second_column {
-  min-width: 6%;
+  padding-right: 10px;
 }
 
 .footer .footer__third_column {
-  min-width: 11.61%;
+  padding-right: 10px;
 }
 
 .footer .footer_fourth_column {
-  min-width: 13.73%;
+  padding-right: 10px;
 }
 
 .footer .footer_fifth_column {
-  min-width: 14.92%;
-}
-
-.footer .footer__title_first_column {
-  font-family: "Cormorant Unicase", serif;
-  font-size: 1.5625rem;
-  color: #333333;
-  font-weight: 300;
-  letter-spacing: normal;
+  padding-right: 10px;
 }
 
 .footer .footer__title_fifth_column,
@@ -876,14 +867,6 @@ button {
   font-size: 1.125rem;
   font-weight: 300;
   text-align: left;
-}
-
-.footer .footer__text_fifth_column {
-  width: 13.25rem;
-}
-
-.footer .footer__title_third_column {
-  width: 13.25rem;
 }
 
 .footer .footer__text_fifth_column {
@@ -983,10 +966,8 @@ button {
   font-weight: 500;
   font-size: 0.75rem;
   letter-spacing: 0.0625rem;
-}
-
-.wrap_button_fifth_column {
-  width: 212px;
+  cursor: pointer;
+  padding: 16 px 36px;
 }
 
 .contact__facebook,
@@ -995,6 +976,7 @@ button {
 }
 
 .button_left {
+  cursor: pointer;
   border: 0;
   border-right: 1px solid #484848;
   height: 2.875rem;
@@ -1012,6 +994,7 @@ button {
 
 .contact__icon {
   background-size: contain;
+  padding: 1px 1px;
 }
 
 .button_rigth {

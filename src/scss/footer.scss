@@ -6,6 +6,7 @@
 .footer {
   background-color: $main-color-footer;
   width: 100%;
+  margin: auto;
 
   .footer__wrap_first_part {
     width: 83%;
@@ -14,7 +15,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    flex-wrap: wrap
+    // flex-wrap: wrap;
   }
 
   .footer__title_first_column {
@@ -23,7 +24,7 @@
     color: $font-color-footer-logo;
     font-weight: $light;
     letter-spacing: calculateRem(1px);
-    margin-top: calculateRem(12px);
+    // margin-bottom: calculateRem(12px);
   }
 
   .footer__list_text_second_column {
@@ -36,33 +37,32 @@
   }
 
   .footer__first_column {
-    min-width: 16.5%;
-
+    padding-right: 10px;
   }
 
   .footer__second_column {
-    min-width: 6%;
+    padding-right: 10px;
   }
 
   .footer__third_column {
-    min-width: 11.61%;
+    padding-right: 10px;
   }
 
   .footer_fourth_column {
-    min-width: 13.73%;
+    padding-right: 10px;
   }
 
   .footer_fifth_column {
-    min-width: 14.92%;
+    padding-right: 10px;
   }
 
-  .footer__title_first_column {
-    font-family: $logo-font;
-    font-size: calculateRem(25px);
-    color: $font-color-footer-logo;
-    font-weight: $light;
-    letter-spacing: normal;
-  }
+  // .footer__title_first_column {
+  //   font-family: $logo-font;
+  //   font-size: calculateRem(25px);
+  //   color: $font-color-footer-logo;
+  //   font-weight: $light;
+  //   letter-spacing: normal;
+  // }
 
   .footer__title_fifth_column,
   .footer__title_first_column,
@@ -70,7 +70,6 @@
   .footer__title_third_column,
   .footer__title_fourth_column {
     margin-bottom: calculateRem(42px);
-  
   }
 
   .footer__title_fifth_column,
@@ -84,13 +83,13 @@
     text-align: left;
   }
 
-  .footer__text_fifth_column {
-    width: calculateRem(212px);
-  }
+  // .footer__text_fifth_column {
+  //   width: calculateRem(212px);
+  // }
 
-  .footer__title_third_column {
-    width: calculateRem(212px);
-  }
+  // .footer__title_third_column {
+  //   width: calculateRem(212px);
+  // }
 
   .footer__text_fifth_column {
     margin-bottom: calculateRem(23px);
@@ -106,8 +105,6 @@
     letter-spacing: 0.0625rem;
     width: calculateRem(230px);
   }
-
- 
 
   .footer__second_part_text {
     color: $color-footer_text;
@@ -164,8 +161,8 @@
   position: relative;
 }
 
-.li:hover>.li__link_text_item_footer_second_column::after,
-.li:hover>.li__link_text_item_footer_third_column::after {
+.li:hover > .li__link_text_item_footer_second_column::after,
+.li:hover > .li__link_text_item_footer_third_column::after {
   display: block;
   transition: 200ms;
 }
@@ -194,12 +191,14 @@
     font-weight: $medium;
     font-size: calculateRem(12px);
     letter-spacing: calculateRem(1px);
+    cursor: pointer;
+    padding: 16 px 36px
   }
 }
 
-.wrap_button_fifth_column {
-  width: 212px;
-}
+// .wrap_button_fifth_column {
+//   // width: 212px;
+// }
 
 .contact__facebook,
 .contact__insta {
@@ -207,12 +206,11 @@
 }
 
 .button_left {
-
+  cursor: pointer;
   border: 0;
   border-right: 1px solid $color-footer-copy;
   height: calculateRem(46px);
   width: calculateRem(46px);
-  //transform: translate(17%, 17%);
   background-color: $mian-fonts-color;
 }
 
@@ -226,6 +224,7 @@
 
 .contact__icon {
   background-size: contain;
+  padding: 1px 1px;
 }
 
 .button_rigth {
