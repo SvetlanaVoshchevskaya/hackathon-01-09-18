@@ -801,7 +801,7 @@ button {
 .footer {
   background-color: #efefef;
   width: 100%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .footer .footer__wrap_first_part {
@@ -855,7 +855,7 @@ button {
 .footer .footer__title_second_column,
 .footer .footer__title_third_column,
 .footer .footer__title_fourth_column {
-  margin-bottom: 2.625rem;
+  padding-bottom: 2.625rem;
 }
 
 .footer .footer__title_fifth_column,
@@ -870,7 +870,7 @@ button {
 }
 
 .footer .footer__text_fifth_column {
-  margin-bottom: 1.4375rem;
+  padding-bottom: 1.4375rem;
   line-height: 1.25rem;
 }
 
@@ -911,7 +911,7 @@ button {
 }
 
 .li:not(:last-child) {
-  margin-bottom: 0.3125rem;
+  padding-bottom: 0.3125rem;
 }
 
 .list_text_second_column,
